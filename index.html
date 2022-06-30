@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-wwidth, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Chamados t.i</T>
+    </title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">CHAMADOS T.I</h1>
+        <br>
+    </div>
+
+
+    <form>
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="Título do chamado">Título do chamado</label>
+                <input type="text" name="text" id="text" required>
+            </div>
+
+            <div class="campo">
+                <label for="Descrição">Descrição</label>
+                <textarea row="6" style="width: 26em" id="descrição" name="descricao"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+
+            <div class="campo">
+                <label>Secretaria</label>
+                <select id="Secretaria" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Administração</option>
+                    <option>Assistência Social</option>
+                    <option>Casa Civil</option>
+                    <option>Comunicação Social</option>
+                    <option>Controle Interno e Transparência</option>
+                    <option>Cultura e Turismo</option>
+                    <option>Desenvolvimento Econômico e Inovação</option>
+                    <option>Educação</option>
+                    <option>Esporte e Lazer</option>
+                    <option>Finanças</option>
+                    <option>Gabinete do vice-prefeito</option>
+                    <option>Infraestrutura</option>
+                    <option>Meio ambiente</option>
+                    <option>Planejamento e Assuuntos Estratégicos</option>
+                    <option>Procuradoria Geral</option>
+                    <option>Receita</option>
+                    <option>São José Previdência</option>
+                    <option>Saúde</option>
+                    <option>Segurança</option>
+                    <option>SUSP</option>
+                </select>
+
+            </div>
+
+            <div class="campo">
+                <label for="Setor">Setor</label>
+                <input type="text" name="text" id="text" required>
+            </div>
+
+            <div class="campo">
+                <label for="Ramal ou Telefone para contato">Ramal ou Telefone para contato</label>
+                <input type="text" name="text" id="text" required>
+            </div>
+
+            <div class="campo">
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="check">
+                <label for="Solicitacao">Solicitação</label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Acesso a pastas / Criação de usuário">Acesso a pastas
+                    / Criação de usuário
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Certificado Digital">Certificado Digital
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Computador">Computador
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="E-mail">E-mail
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Monitor">Monitor
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Mouse / teclado">Mouse / teclado
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Rede">Rede
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Sites / Softwares">Sites / Softwares
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Telefone">Telefone
+                </label>
+                <label>
+                    <input type="radio" name="solicitacao" value="Outros">Outros
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="Patrimonio">Patrimônio</label>
+                <input type="text" name="text" id="text" required>
+            </div>
+
+            <div class="campo">
+                <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+                    <label>Imagem de perfil: <input type="file" name="image"></label>
+                </form>
+            </div>
+
+            <button class="botao" type="submit">Abrir ticket</button>
+
+
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
