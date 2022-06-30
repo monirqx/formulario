@@ -3,6 +3,7 @@
     padding: 0;
     background-color: #202833;
     font-family: "Courier New", Courier, monospace
+
 }
 
 
@@ -18,16 +19,16 @@
 }
 
 .fieldset {
-    border: 0;
+    border: none;
 }
 
 
 #body {
+    border: 1px solid #000;
     display: flex;
     flex-direction: center;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
     font-family: "Courier New", Courier, monospace;
     color: #FFFFFF;
     font-size: 1em;
@@ -76,7 +77,6 @@ button {
 }
 
 .campo label {
-    margin-bottom: 0.2em;
     color: #FFFFFF;
     display: block
 }
@@ -89,8 +89,8 @@ fieldset .grupo .campo {
     justify-content: center;
     background-color: #202833;
     font-family: "Courier New", Courier, monospace;
-    color: #FFFFFF;
     font-size: 1em;
+    border: none;
 }
 
 
@@ -99,8 +99,8 @@ fieldset .grupo .campo {
 .campo select,
 .campo textarea {
     padding: 0.2em;
-    border: 1px solid #FFFFFF;
-    box-shadow: 2px 2px 2px #202833;
+    border: 1px solid #FFFFFF;   
+         box-shadow: 2px 2px 2px #202833;
     float: center;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@ fieldset .grupo .campo {
     justify-content: center;
     background-color: #202833;
     font-family: "Courier New", Courier, monospace;
-    color: #FFFFFF;
+    color: #fff;
     font-size: 1em;
 }
 
@@ -125,10 +125,10 @@ fieldset .grupo .campo {
 .botao {
     font-size: 1.2em;
     background-color: #202833;
-    border: 1 solid #FFF;
+    border: 1px #FFFFFF;
     margin-bottom: 10em;
     color: #FFFFFF;
-    padding: 0.2em 0.6em;
+    padding: 2em 0.6em;
     position: absolute;
     cursor: pointer;
     text-align: center;
@@ -147,5 +147,5 @@ div {
 textarea:focus,
 input:focus {
     box-shadow: 0 0 0 0;
-    outline: 0;
 }
+
