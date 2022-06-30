@@ -20,6 +20,11 @@
 
 .fieldset {
     border: none;
+    display: flex;
+    text-align: column;
+    display: flex;
+    flex-direction: center;
+    align-items: center
 }
 
 
@@ -61,12 +66,9 @@ form div {
 }
 
 
-form input,
-select,
-textarea,
-button {
+form input, select, textarea, button {
     outline: unset;
-    padding: 35px;
+    padding: 20px;
     min-width: 400px;
     border: 2px solid #1d242e;
     border-radius: 20px;
@@ -94,10 +96,7 @@ fieldset .grupo .campo {
 }
 
 
-.campo input[type="text"],
-.campo input[type="email"],
-.campo select,
-.campo textarea {
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #FFFFFF;   
          box-shadow: 2px 2px 2px #202833;
@@ -121,31 +120,35 @@ fieldset .grupo .campo {
 .campo textarea:focus {
     background-color: #1d242e;
 }
-
-.botao {
-    font-size: 1.2em;
-    background-color: #202833;
-    border: 1px #FFFFFF;
-    margin-bottom: 10em;
-    color: #FFFFFF;
-    padding: 2em 0.6em;
-    position: absolute;
-    cursor: pointer;
-    text-align: center;
-}
+  
+#botone {
+        gap: 1px;
+        font-size: 1.5em;
+        background-color: #202833;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: center;
+        position: center;
+        cursor: pointer;
+        width: 1em;
+        height: 2em;
+        border: 1em;
+        padding: 1.5em;
+    }
 
 .botao:hover {
     background-color: #202833;
-    box-shadow: inset 2px 2px 2px #000;
+    box-shadow: 3px 3px 3px #000;
     text-shadow: none;
 }
 
 div {
-    margin: 20px;
+    margin: 30px;
 }
 
-textarea:focus,
-input:focus {
-    box-shadow: 0 0 0 0;
+textarea:focus, input:focus {
+    box-shadow: none;
 }
+
+
 
