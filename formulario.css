@@ -45,6 +45,7 @@ form {
     flex-direction: center;
     align-items: center;
     justify-content: center;
+    border: none;
 
 }
 
@@ -92,13 +93,12 @@ fieldset .grupo .campo {
     background-color: #202833;
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
-    border: none;
 }
 
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
-    border: 1px solid #FFFFFF;   
+    border: 1px solid #fff;   
          box-shadow: 2px 2px 2px #202833;
     float: center;
     display: flex;
@@ -149,6 +149,7 @@ div {
 textarea:focus, input:focus {
     box-shadow: none;
 }
+
 
 
 
