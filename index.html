@@ -3,140 +3,95 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="formulario.css">
-    <title>Chamados t.i</T>
-    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="form-image">
+            <img src="imagem.svg">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-    <div>
-        <h1 id="titulo">CHAMADOS T.I</h1>
-        <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
     </div>
-
-
-    <form>
-        <fieldset class="grupo">
-
-            <div class="campo">
-                <label for="Título do chamado">Título do chamado</label>
-                <input type="text" name="text" id="text" required>
-            </div>
-
-            <div class="campo">
-                <label for="Descrição">Descrição</label>
-                <textarea row="6" style="width: 26em" id="descrição" name="descricao"></textarea>
-            </div>
-
-            <div class="campo">
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
-
-
-            <div class="campo">
-                <label>Secretaria</label>
-                <select id="Secretaria" required>
-                    <option selected disabled value="">Selecione</option>
-                    <option>Administração</option>
-                    <option>Assistência Social</option>
-                    <option>Casa Civil</option>
-                    <option>Comunicação Social</option>
-                    <option>Controle Interno e Transparência</option>
-                    <option>Cultura e Turismo</option>
-                    <option>Desenvolvimento Econômico e Inovação</option>
-                    <option>Educação</option>
-                    <option>Esporte e Lazer</option>
-                    <option>Finanças</option>
-                    <option>Gabinete do vice-prefeito</option>
-                    <option>Infraestrutura</option>
-                    <option>Meio ambiente</option>
-                    <option>Planejamento e Assuuntos Estratégicos</option>
-                    <option>Procuradoria Geral</option>
-                    <option>Receita</option>
-                    <option>São José Previdência</option>
-                    <option>Saúde</option>
-                    <option>Segurança</option>
-                    <option>SUSP</option>
-                </select>
-
-            </div>
-            <div class="campo">
-                <label for="Setor">Setor</label>
-                <input type="text" name="text" id="text" required>
-            </div>
-
-            <div class="campo">
-                <label for="Ramal ou Telefone para contato">Ramal ou Telefone para contato</label>
-                <input type="text" name="text" id="text" required>
-            </div>
-
-            <div class="campo">
-                <label for="E-mail">E-mail</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div id="check">
-                <label for="Solicitacao">Solicitação</label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Acesso a pastas / Criação de usuário">Acesso a pastas
-                    / Criação de usuário
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Certificado Digital">Certificado Digital
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Computador">Computador
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="E-mail">E-mail
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Monitor">Monitor
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Mouse / teclado">Mouse / teclado
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Rede">Rede
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Sites / Softwares">Sites / Softwares
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Telefone">Telefone
-                </label>
-                <label>
-                    <input type="radio" name="solicitacao" value="Outros">Outros
-                </label>
-            </div>
-
-            <div class="campo">
-                <label for="Patrimonio">Patrimônio</label>
-                <input type="text" name="text" id="text" required>
-            </div>
-
-            <div class="campo">
-                <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
-                    <label>Imagem de perfil: <input type="file" name="image"></label>
-                </form>
-            </div>
-
-            <div>
-                <br>
-                <br>
-            <button class="botao" id="botone" type="button">Abrir ticket</button>
-                <br>
-                <br>
-            </div>
-
-
-        </fieldset>
-
-    </form>
-
-
 </body>
 
 </html>
